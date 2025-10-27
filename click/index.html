@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="open_button">表示</button>
+  <div id="long_content">
+    <p>長いコンテンツ</p>
+    <p>長いコンテンツ</p>
+    <p>長いコンテンツ</p>
+    <p>長いコンテンツ</p>
+    <p>長いコンテンツ</p>
+    <p>長いコンテンツ</p>
+
+  </div>
+  <script>
+
+
+
+    const longContent = document.getElementById('long_content');
+    longContent.style.display = 'none';
+    document.getElementById('open_button').addEventListener('click', () => {
+      longContent.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
