@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>イチゴ: 1000円</p>
+  <select id="count">
+    <option value="1">1個</option>
+    <option value="2">2個</option>
+    <option value="3">3個</option>
+    <option value="4">4個</option>
+    <option value="5">5個</option>
+  </select>
+
+  <script>
+    document.querySelector('#count').addEventListener('change', () => {
+      const count = document.querySelector('#count').value;
+      const price = 1000;
+      const total = (Number(count) * price);
+      alert(total.toLocaleString());
+    });
+  </script>
+</body>
+</html>
