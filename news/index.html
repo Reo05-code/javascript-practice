@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const news = [
+    {
+        "title": "サイトを更新しました",
+        "date": "2025-10-27",
+        "content": "news.html"
+    },
+    {
+        "title": "新しい記事が追加されました",
+        "date": "2025-10-20",
+        "content": "article.html"
+    },
+    {
+        "title": "メンテナンスのお知らせ",
+        "date": "2025-10-15",
+        "content": "maintenance.html"
+    }
+    ];
+
+    for (let item of news) {
+        document.write(
+            '<a href="' + item.content + '">' +
+            item.date + ' - ' +
+            item.title + '</a><br>');
+    }
+  </script>
+</body>
+</html>

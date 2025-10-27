@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="get">
+    <select name="year" id="year">
+      <option value="2020">2020年</option>
+      <option value="2021">2021年</option>
+      <option value="2022">2022年</option>
+      <option value="2023">2023年</option>
+      <option value="2024">2024年</option>
+      <option value="2025">2025年</option>
+      <option value="2026">2026年</option>
+
+    </select>
+  </form>
+
+  <script>
+    // let i = 0;
+    // while (i < 10) {
+    //   document.write(i + '<br>');
+    //   i++;
+    // }
+
+    let html = '<select name="year" id="year">';
+    const today = new Date();
+    const year = today.getFullYear();
+    for (let i = year; i <= year + 10; i++) {
+      document.write(i + '<br>');
+    }
+  </script>
+</body>
+</html>
