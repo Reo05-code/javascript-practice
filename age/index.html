@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" method="get">
+    <label>
+      年齢：
+      <input type="number" id="age" name="age">
+    </label>
+    <button type="submit">送信</button>
+  </form>
+
+  <script>
+    const age = document.querySelector('#age');
+    document.querySelector('form').addEventListener('submit', (e) => {
+      if (Number(age.value) < 0 || Number(age.value) > 120) {
+        alert('年齢を正しく入力してください');
+        e.preventDefault();
+      }
+
+
+  });
+  </script>
+</body>
+</html>
