@@ -6,12 +6,12 @@ import { Footer } from './components/Footer';
 function App() {
   const siteTitle = 'Reactの基礎を学ぼう';
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <>
-      <Header />
+      <Header siteTitle={siteTitle}/>
       <MainContent />
-      <Footer />
+      <Footer siteTitle={siteTitle} currentYear={currentYear}/>
     </>
   )
 }
