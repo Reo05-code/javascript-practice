@@ -1,4 +1,7 @@
 import React from 'react';
+import { ContactForm } from './ContactForm';
+import { Quiz } from './Quiz';
+
 const chapters = [
   'Reactの概要を理解しよう',
   'Reactでよく使われるJavaScriptの記法を理解しよう',
@@ -59,6 +62,10 @@ export function MainContent({ progress, setProgress }) {
           ))}
         </ul>
       </section>
+
+      <ContactForm />
+
+      <Quiz />
     </main>
   );
 }
